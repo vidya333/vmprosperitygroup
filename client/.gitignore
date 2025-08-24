@@ -1,0 +1,15 @@
+# Node dependencies
+node_modules
+client/node_modules
+server/node_modules
+
+# Env files
+.env
+client/.env
+server/.env
+
+# Uploads
+server/uploads
+
+# Logs
+*.log

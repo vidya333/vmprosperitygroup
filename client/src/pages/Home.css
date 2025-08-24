@@ -1,0 +1,74 @@
+.landing-container {
+  padding: 0px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+}
+
+.landing-header {
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.landing-header h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.landing-header span {
+  color: #555;
+}
+
+.property-section {
+ width: 100%;
+ margin: 0 auto;
+}
+
+.property-section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+.filter-bar {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  padding: 10px;
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.standard-button {
+    background-color: #ff5722;
+    color: white;
+    padding: 14px 28px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+.logo-subtext{
+  line-height: 1.3rem;
+  font-size: 1.2rem;
+  color: #8d8d8d;
+}
+
+.about {
+  min-height: 20vh;
+  max-height: auto;
+}

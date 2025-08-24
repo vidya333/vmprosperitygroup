@@ -1,0 +1,23 @@
+.standard-btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 16px 28px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    margin: 0px 5px;
+}
+.bg-fade {
+  background-color: lab(100% 0.01 -0.01 / 0.055); 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.text-orng{
+  color: #ff5722;
+}
+.scrolled {
+  background-color: white !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

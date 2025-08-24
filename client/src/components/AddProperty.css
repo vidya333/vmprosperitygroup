@@ -1,0 +1,75 @@
+.add-property-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.property-form{
+  background-image: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)),url(../../public/images/villa9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bg-form{
+   background: #ffffff50;
+}
+
+.add-property-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-property-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.add-property-form input,
+.add-property-form textarea,
+.add-property-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.add-property-form textarea {
+  grid-column: span 2;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.add-property-form button {
+  grid-column: span 2;
+  padding: 12px;
+  background: #007BFF;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-property-form button:hover {
+  background: #0056b3;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .add-property-form {
+    grid-template-columns: 1fr;
+  }
+
+  .add-property-form textarea,
+  .add-property-form button {
+    grid-column: span 1;
+  }
+}

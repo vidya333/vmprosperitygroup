@@ -1,0 +1,85 @@
+.our-promise {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+
+.promise-text {
+  flex: 1 1 50%;
+  min-width: 300px;
+}
+
+.promise-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fffdfc;
+}
+
+.promise-text p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+.enquiry-form {
+  flex: 1 1 40%;
+  min-width: 300px;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.enquiry-form h4 {
+  margin-bottom: 1rem;
+  color: #575757;
+}
+
+.enquiry-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.enquiry-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.enquiry-form button {
+  padding: 0.8rem;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.enquiry-form button:hover {
+  background: #e64a19;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .our-promise {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .promise-text,
+  .enquiry-form {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}

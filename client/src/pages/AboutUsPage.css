@@ -1,0 +1,108 @@
+.about-container {
+  width: 100%;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-image: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url(../../public/images/about.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.about-header h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.about-section {
+  background: #ffffff11;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.about-section h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.about-section h4 {
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.about-section p {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.about-section ul {
+  padding-left: 20px;
+}
+
+.about-section ul li {
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.about-impact-section {
+  position: relative;
+}
+
+.impact-overlay {
+  background: rgba(0, 0, 0, 0.6); 
+  padding: 50px 0;
+  border-radius: 10px;
+}
+
+.about-impact-section h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.about-impact-section p {
+  color: #f1f1f1;
+  font-size: 1.1rem;
+}
+
+.service-card {
+  background: #00000071;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2rem;
+  }
+  .about-header h2 {
+    font-size: 1.2rem;
+  }
+}
