@@ -120,7 +120,7 @@ const AddProject = ({ editId, initialData, setEditId }) => {
 
   return (
 <div className="container-fluid pt-5 property-form" ref={formRef}>
-      <h2 className="mb-4 text-center text-light mt-4">
+      <h2 className="mb-4 text-center text-dark mt-4">
         {editId ? "Edit Project" : "Add New Project"}
       </h2>
 

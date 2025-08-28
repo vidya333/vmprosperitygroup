@@ -30,7 +30,8 @@ const Banner = () => {
       <div className="banner-overlay">
 
         <div className="banner-content">
-          <h2 className="banner-title">Welcome to VM Prosperity Group !</h2>
+          <img src="/images/vmlogo.png" alt="logo" style={{height:"250px",marginBottom:"-40px"}}  />
+          <h2 className="banner-title -mt-5 -pt-5">Welcome to VM Prosperity Group !</h2>
           <p className="banner-subtext">
             Your trusted partner in finding dream homes and properties !
           </p>

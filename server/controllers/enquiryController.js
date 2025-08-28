@@ -4,11 +4,10 @@ const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: process.env.EMAIL_USER,   
-    pass: process.env.EMAIL_PASS    
+    user: "vidya.nk07@gmail.com",   
+    pass: "zrcy wrdv pkss zsik"      
   }
 });
-
 
 exports.submitEnquiry = async (req, res) => {
   const { name, email, phone, message } = req.body;
@@ -20,8 +19,8 @@ exports.submitEnquiry = async (req, res) => {
 
     // To Send Email Notification
     await transporter.sendMail({
-      from: `"Admin" <${process.env.EMAIL_USER}>`,  
-      to: "vmprosperitygroup@gmail.com",            
+      from: `"Admin" <vidya.nk07@gmail.com>`,  
+      to: "admin@vmprosperitygroup.com",            
       subject: "Received New Enquiry!",
       html: `<h3>New Enquiry Received</h3>
         <p><strong>Name:</strong> ${name}</p>

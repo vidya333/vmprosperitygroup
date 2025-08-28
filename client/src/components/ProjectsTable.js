@@ -49,8 +49,8 @@ const ProjectsTable = ({ onEdit }) => {
   return (
     <div className="mt-5">
       <div className="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
-        <h3 className="mb-0 text-light">All Projects</h3>
-        <p className="mb-0 text-light">Total Projects: {filteredProjects.length}</p>
+        <h3 className="mb-0 text-dark">All Projects</h3>
+        <p className="mb-0 text-dark">Total Projects: {filteredProjects.length}</p>
       </div>
 
       {/* Search bar */}

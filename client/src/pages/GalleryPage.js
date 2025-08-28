@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Gallery from "../components/Gallery";
+import OurPromise from "../components/OurPromise";
 
 function GalleryPage() {
   const [items, setItems] = useState([]);
@@ -17,9 +18,9 @@ function GalleryPage() {
   
 
   return (
-    <div className="container my-5 py-5">
-      
+    <div className="container-fluid  pt-5">
       <Gallery items={items} />
+      <OurPromise/>
     </div>
   );
 }

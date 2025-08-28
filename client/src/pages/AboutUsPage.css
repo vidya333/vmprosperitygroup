@@ -3,7 +3,7 @@
   padding: 20px;
   font-family: "Segoe UI", sans-serif;
   line-height: 1.6;
-  background-image: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url(../../public/images/about.jpg);
+  /* background-image: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url(../../public/images/villa11.jpg); */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,12 +17,12 @@
 
 .about-header h1 {
   font-size: 2.5rem;
-  color: #ffffff;
+  color: #4e4e4e;
 }
 
 .about-header h2 {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #4e4e4e;
 }
 
 .about-section {
@@ -34,18 +34,18 @@
 }
 
 .about-section h3 {
-  color: #ffffff;
+  color: #4e4e4e;
   margin-bottom: 10px;
 }
 
 .about-section h4 {
-  color: #ffffff;
+  color: #4e4e4e;
   margin-top: 15px;
 }
 
 .about-section p {
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #4e4e4e;
 }
 
 .about-section ul {
@@ -54,7 +54,7 @@
 
 .about-section ul li {
   margin-bottom: 8px;
-  color: #ffffff;
+  color: #4e4e4e;
 }
 
 .about-impact-section {
@@ -62,23 +62,23 @@
 }
 
 .impact-overlay {
-  background: rgba(0, 0, 0, 0.6); 
+  background: rgba(0, 0, 0, 0.418); 
   padding: 50px 0;
   border-radius: 10px;
 }
 
 .about-impact-section h2 {
-  color: #fff;
+  color: #fafafa;
   font-size: 3rem;
 }
 
 .about-impact-section p {
-  color: #f1f1f1;
+  color: #ffffff;
   font-size: 1.1rem;
 }
 
 .service-card {
-  background: #00000071;
+  background: #dbdbdb71;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

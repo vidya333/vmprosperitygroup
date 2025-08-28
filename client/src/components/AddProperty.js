@@ -170,7 +170,7 @@ const [items, setItems] = useState([]);
   return (
     <div className="container-fluid pt-5 property-form">
       {/* Form to add properties */}
-      <h2 className="mb-4 text-center text-light mt-4">{editId ? 'Edit Property' : 'Add New Property'}</h2>
+      <h2 className="mb-4 text-center text-dark mt-4">{editId ? 'Edit Property' : 'Add New Property'}</h2>
       <form onSubmit={handleSubmit} className='container bg-form p-3 rounded'>
         <div className="row g-3">
           <div className="col-md-6">
@@ -247,7 +247,7 @@ const [items, setItems] = useState([]);
             <input
               type="text"
               name="brokerName"
-              placeholder="Broker Name"
+              placeholder="Consultant Name"
               value={formData.brokerName}
               onChange={handleChange}
               required
@@ -259,7 +259,7 @@ const [items, setItems] = useState([]);
             <input
               type="email"
               name="brokerEmail"
-              placeholder="Broker Email"
+              placeholder="Consultant Email"
               value={formData.brokerEmail}
               onChange={handleChange}
               required
@@ -271,7 +271,7 @@ const [items, setItems] = useState([]);
             <input
               type="tel"
               name="brokerPhone"
-              placeholder="Broker Phone"
+              placeholder="Consultant Phone (Include 91 at starting Eg.918564799885)"
               value={formData.brokerPhone}
               onChange={handleChange}
               required
@@ -309,6 +309,8 @@ const [items, setItems] = useState([]);
                 <option value="2BHK">2 BHK</option>
                 <option value="2.5BHK">2.5 BHK</option>
                 <option value="3BHK">3 BHK</option>
+                <option value="4BHK">4 BHK</option>
+                <option value="5BHK">5 BHK</option>
               </select>
             </div>
 
@@ -425,7 +427,7 @@ const [items, setItems] = useState([]);
       <ProjectsTable onEdit={handleEditProject} />
 
       {/* Media upload */}
-      <h4 className='text-light'>Upload photos in Gallery</h4>
+      <h4 className='text-dark mt-5'>Upload photos in Gallery</h4>
       <GalleryUpload onUpload={handleUpload} />
 
 \    </div>

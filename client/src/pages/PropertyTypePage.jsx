@@ -151,7 +151,7 @@ const PropertyTypePage = () => {
           ))
         ) : (
           <div className="col-12 text-center">
-            <p>No properties found matching the criteria.</p>
+            <p style={{height:"90vh"}}>No properties found matching the criteria.</p>
           </div>
         )}
       </div>

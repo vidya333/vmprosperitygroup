@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import './EnquiryModal.css';
 
-const EnquiryModal = ({ onClose }) => {
+const EnquiryModal = ({ onClose, onSuccess, prefillMessage }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    message: '',
+    message: prefillMessage || '',
   });
 
-  const [submitting, setSubmitting] = useState(false); 
+  const [submitting, setSubmitting] = useState(false);
 
   const handleChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,15 +17,21 @@ const EnquiryModal = ({ onClose }) => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    setSubmitting(true); 
+    setSubmitting(true);
     try {
       await fetch('http://localhost:5000/api/enquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
+
       alert('Enquiry submitted successfully!');
-      onClose(); 
+
+      // ✅ Trigger callback if provided
+      if (onSuccess) onSuccess();
+
+      // Close modal
+      onClose();
     } catch (err) {
       console.error(err);
       alert('Error submitting enquiry');
@@ -38,13 +44,19 @@ const EnquiryModal = ({ onClose }) => {
     <div className="modal-overlay">
       <div className="modal-content bg-light rounded">
         <button className="close-btn" onClick={onClose}>×</button>
-        <h2 className='text-dark'>Please fill Details</h2>
+        <h2 className='text-dark'>Get In Touch</h2>
         <form onSubmit={handleSubmit}>
           <input type="text" name="name" placeholder="Your Name" required onChange={handleChange} />
           <input type="email" name="email" placeholder="Your Email" required onChange={handleChange} />
           <input type="tel" name="phone" placeholder="Phone Number" required onChange={handleChange} />
-          <textarea name="message" placeholder="Your Enquiry" required onChange={handleChange}></textarea>
-          
+          <textarea
+            name="message"
+            placeholder="Your Enquiry"
+            required
+            onChange={handleChange}
+            value={formData.message}
+          ></textarea>
+
           <button type="submit" disabled={submitting}>
             {submitting ? 'Submitting...' : 'Submit'}
           </button>

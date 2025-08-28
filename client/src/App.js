@@ -11,6 +11,7 @@ import AddProperty from './components/AddProperty';
 import AboutUsPage from './pages/AboutUsPage';
 import AddProject from './components/AddProject';
 import GalleryPage from './pages/GalleryPage';
+import LoanServices from './pages/LoanServices';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/property/:id" element={<PropertyDetailPage />} />
         <Route path="/about-us" element={<AboutUsPage/>} />
         <Route path="/gallery" element={<GalleryPage/>} />
+        <Route path="/loan" element={<LoanServices/>}/>
         <Route
                 path="/add-property"
                 element={

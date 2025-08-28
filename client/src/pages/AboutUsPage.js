@@ -73,11 +73,11 @@ const AboutUsPage = () => {
         <h3>Our Legacy & Journey</h3>
         <ul>
           <li>
-            2009: Reliable Deals Real Estate begins operations, focusing on
+            2012: Reliable Deals Real Estate begins operations, focusing on
             premium plots and residential properties.
           </li>
           <li>
-            2012: Green Earth Realty is established, specializing in strategic
+            2015: Green Earth Realty is established, specializing in strategic
             land investments and commercial spaces.
           </li>
           <li>
@@ -106,9 +106,9 @@ const AboutUsPage = () => {
             <div className="col-md-6 col-xxl-3">
             <div className="service-card text-center p-4 shadow-sm h-100">
                 <div className="service-icon mb-3">
-                <i className="bi bi-building fs-1 text-light"></i>
+                <i className="bi bi-building fs-1 text-dark"></i>
                 </div>
-                <h5 className="mb-3 text-light">Real Estate Solutions</h5>
+                <h5 className="mb-3 text-dark">Real Estate Solutions</h5>
                 <ul className="list-unstyled text-muted">
                 <li>Residential plots, luxury apartments, and independent villas.</li>
                 <li>Commercial office spaces, retail units, and mixed-use developments.</li>
@@ -121,7 +121,7 @@ const AboutUsPage = () => {
                 <div className="service-icon mb-3">
                 <i className="bi bi-hammer fs-1 text-warning"></i>
                 </div>
-                <h5 className="mb-3 text-light">Construction & Development</h5>
+                <h5 className="mb-3 text-dark">Construction & Development</h5>
                 <ul className="list-unstyled text-muted">
                 <li>Modern residential and commercial projects with sustainable designs.</li>
                 <li>End-to-end project management with a focus on quality and timely delivery.</li>
@@ -133,7 +133,7 @@ const AboutUsPage = () => {
                 <div className="service-icon mb-3">
                 <i className="bi bi-graph-up-arrow fs-1 text-success"></i>
                 </div>
-                <h5 className="mb-3 text-light">Investment Opportunities</h5>
+                <h5 className="mb-3 text-dark">Investment Opportunities</h5>
                 <ul className="list-unstyled text-muted">
                 <li>Land banking for future growth.</li>
                 <li>High-return real estate investment plans.</li>
@@ -146,7 +146,7 @@ const AboutUsPage = () => {
                 <div className="service-icon mb-3">
                 <i className="bi bi-tree fs-1 text-success"></i>
                 </div>
-                <h5 className="mb-3 text-light">Tourism & Property Experiences</h5>
+                <h5 className="mb-3 text-dark">Tourism & Property Experiences</h5>
                 <ul className="list-unstyled text-muted">
                 <li>Farmhouse stays and vacation homes.</li>
                 <li>Tourism-based land development for resorts and retreats.</li>
@@ -186,15 +186,13 @@ const AboutUsPage = () => {
       <section className="about-section container">
         <h3>Leadership Team</h3>
         <p>
-          <strong>Mr. Virendra Singh Deshmukh – Co-Founder & Director:</strong>{" "}
-          Founder of Reliable Deals Real Estate, Mr. Deshmukh brings strategic
+          <strong>Mr. Virendra Singh Deshmukh </strong>brings strategic
           market insight and extensive experience in property sales, land
           transactions, and development. His commitment to ethical business has
           been key to building a strong network and loyal clientele.
         </p>
         <p>
-          <strong>Mr. Mayur Patil – Co-Founder & Director:</strong> Founder of
-          Green Earth Realty, Mr. Patil is known for his innovative approach to
+          <strong>Mr. Mayur Patil </strong> is known for his innovative approach to
           land acquisition, investment strategies, and tourism-based
           developments. His vision is to create sustainable real estate
           opportunities that deliver long-term value.

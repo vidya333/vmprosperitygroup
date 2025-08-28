@@ -70,6 +70,13 @@ const Header = () => {
                 Gallery
               </Nav.Link>
               <Nav.Link
+              as={Link}
+                to="/loan"
+                className={scrolled ? 'text-dark' : 'text-light'}
+              >
+                Loans
+              </Nav.Link>
+              <Nav.Link
                 href="#contact"
                 className={scrolled ? 'text-dark' : 'text-light'}
               >
